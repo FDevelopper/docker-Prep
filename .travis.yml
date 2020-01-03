@@ -6,4 +6,4 @@ before_install:
   - docker build  -t issamfellaki/docker-prep -f Dockerfile.dev .
 
 script:
-  - docker run issamfellaki/docker-prep npm run test -- --coverage
+  - docker run -e CI=true  issamfellaki/docker-prep npm run test

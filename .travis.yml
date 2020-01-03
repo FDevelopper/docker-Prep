@@ -3,7 +3,7 @@ services:
   -docker
 
 before_install:
-  - docker build  -t issamfellaki/docker-Prep -f Dockerfile.dev .
+  - docker build  -t issamfellaki/docker-prep -f Dockerfile.dev .
 
 script:
-  - docker run issamfellaki/docker-Prep npm run test -- --coverage
+  - docker run issamfellaki/docker-prep npm run test -- --coverage
